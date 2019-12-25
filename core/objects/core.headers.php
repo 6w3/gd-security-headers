@@ -93,6 +93,6 @@ class gdsih_component_headers {
             $policy = 'no-referrer-when-downgrade';
         }
 
-        return $htaccess ? 'Referrer-Policy "'.$policy.'"' : 'Referrer-Policy: "'.$policy.'"';
+        return $htaccess ? 'Referrer-Policy '.$policy : 'Referrer-Policy: '.$policy;
     }
 }
