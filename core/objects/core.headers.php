@@ -81,7 +81,7 @@ class gdsih_component_headers {
             $max_age.= '; includeSubDomains';
         }
 
-        return $htaccess ? 'Strict-Transport-Security "max-age='.$max_age.'"' : 'Strict-Transport-Security: "max-age='.$max_age.'"';
+        return $htaccess ? 'Strict-Transport-Security max-age='.$max_age : 'Strict-Transport-Security: max-age='.$max_age;
     }
 
     private function _generate_referrer_policy($htaccess = false) {
